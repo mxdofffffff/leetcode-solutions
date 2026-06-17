@@ -16,6 +16,7 @@ def merge(nums1,nums2,m,n):
         k-=1
     while j>=0:
         nums1[k]=nums2[j]
+        j-=1
         k-=1
     return nums1
 print(merge(nums1,nums2,m,n))
