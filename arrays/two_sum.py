@@ -1,12 +1,11 @@
-nums = [2,7,10,8]
+nums = [1,7,10,8]
 target = 9
 
-def solution(numbers,target):
-    sl = {}
-    for i,num in enumerate(numbers):
-        res = target - num
-        if res in sl:
-            print(sl[res],i)
-        sl[num] = i
-
-solution(nums,target)
+def solution(nums,target):
+    sl={}
+    for i,num in enumerate(nums):
+        result = target - num
+        if result in sl:
+            return sl[result],i
+        sl[num]=i
+print(solution(nums,target))
