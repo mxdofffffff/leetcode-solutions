@@ -9,4 +9,4 @@ def majority(nums):
     for k,value in sl.items():
         if value>len(nums)//2:
             return k
-print(majority(nums)
+print(majority(nums))
