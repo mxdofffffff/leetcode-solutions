@@ -3,7 +3,7 @@ t = "ahbgdc"
 def subsequence(s,t):
     p = 0
     for char in t:
-        if char == s[p]:
+        if p<len(s) and char == s[p]:
             p+=1
         if p == len(s):
             return True
