@@ -11,6 +11,5 @@ def insert_position(nums,target):
             left = mid + 1
         else:
             right = mid - 1
-
-    return left
+    return -1
 print(insert_position(nums,target))
